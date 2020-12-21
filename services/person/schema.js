@@ -9,6 +9,7 @@ const people = [
   { id: '2', firstName: 'Alexandre', lastName: 'Borel' },
 ]
 
+// FRONTEND TYPES
 // export interface Person {
 //   id: string
 //   firstName: string

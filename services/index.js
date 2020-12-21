@@ -16,7 +16,11 @@ export default [
   //   port: 4004,
   // },
   {
-    name: 'people',
+    name: 'person',
     port: 4005,
+  },
+  {
+    name: 'story',
+    port: 4006,
   },
 ]

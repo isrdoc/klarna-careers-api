@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start-service-people": "nodemon -e js,graphql services/people/index.js",
+    "start-service-person": "nodemon -e js,graphql services/person/index.js",
+    "start-service-story": "nodemon -e js,graphql services/story/index.js",
     "start-service-gateway": "nodemon -e js,graphql index.js",
     "start-services": "concurrently \"yarn:start-service-*\""
   },
