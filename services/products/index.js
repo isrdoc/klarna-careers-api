@@ -1,4 +1,10 @@
 import { startServer } from '../../utils/index.js'
 import schema from './schema.js'
+import services from '../../services/index.js'
 
-startServer({ schema, name: 'products', port: 4003 })
+const SERVICE_NAME = 'products'
+
+const service = services.find((service) => service.name === SERVICE_NAME)
+const { name, port } = service
+
+startServer({ schema, name, port })

@@ -4,7 +4,7 @@ import { startServer, makeRemoteExecutor } from './utils/index.js'
 import { stitchingDirectives } from '@graphql-tools/stitching-directives'
 const { stitchingDirectivesTransformer } = stitchingDirectives()
 
-import services from './services.js'
+import services from './services/index.js'
 
 const SERVICE_TIMEOUT = 300
 
