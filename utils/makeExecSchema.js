@@ -1,16 +1,11 @@
 import { makeExecutableSchema } from '@graphql-tools/schema'
 import { stitchingDirectives } from '@graphql-tools/stitching-directives'
+import { makeStichingTypeDefs } from '../utils/index.js'
 
 export default function makeExecSchema({ schema, resolvers }) {
-  const {
-    stitchingDirectivesTypeDefs,
-    stitchingDirectivesValidator,
-  } = stitchingDirectives()
+  const { stitchingDirectivesValidator } = stitchingDirectives()
 
-  const typeDefs = `
-    ${stitchingDirectivesTypeDefs}
-    ${schema}
-  `
+  const typeDefs = makeStichingTypeDefs({ schema })
 
   const execSchema = makeExecutableSchema({
     schemaTransforms: [stitchingDirectivesValidator],
