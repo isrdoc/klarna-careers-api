@@ -23,4 +23,12 @@ export default [
     name: 'story',
     port: 4006,
   },
+  {
+    name: 'title',
+    port: 4007,
+  },
+  {
+    name: 'competency',
+    port: 4008,
+  },
 ]

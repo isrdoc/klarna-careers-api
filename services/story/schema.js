@@ -36,7 +36,7 @@ const stories = [
   },
 ]
 
-// FRONTEND TYPES
+/* FRONTEND TYPES */
 // export interface Story {
 //   id: string
 //   atKlarnaIcan: string
